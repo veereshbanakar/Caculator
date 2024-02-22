@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <p id="heading">Simple Calculator</p>
+    <p id="time"></p>
+    <div id="calcutaor">
+        <div id="dispaly">
+           <input type="text" id="input">
+
+           </input>
+         <div id="result"></div>
+        </div>
+        <br>
+        <div id="buttons" class="sec">
+            <div><button onclick="del()" ">Del</button>
+            <button onclick="clean()">AC</button> 
+            <button onclick="input.value +='('">(</button>
+            <button onclick="input.value +=')'">)</button></div>
+            
+            <div class="sec"><button onclick="input.value +='+'" value= "+" >+</button>
+                <button onclick="input.value +='-'" >-</button>
+                <button onclick="input.value +='*'" value="*">*</button>
+                <button  onclick="input.value +='.'">.</button>
+                </div>
+            
+            
+            <div class="sec"><button onclick="input.value +='/'">/</button>
+                <button onclick="input.value +='Math.sin('">sin</button>
+                <button onclick="input.value +='Math.cos('">cos</button>
+                <button onclick="input.value +='Math.tan('">tan</button>
+
+             </div>
+
+            <div class="sec"><button onclick="input.value += '1'" value="1">1</button>
+                <button onclick="input.value +='2'">2</button>
+                <button onclick="input.value +='3'">3</button>
+                <button onclick="input.value +='4'">4</button>
+
+            </div>
+            <div class="sec"><button onclick="input.value +='5'">5</button>
+                <button onclick="input.value +='6'">6</button>
+                <button onclick="input.value +='7'">7</button>
+                <button onclick="input.value +='8'">8</button></div>
+
+
+            <div class="sec"><button onclick="input.value +='9'">9</button>
+                <button onclick="input.value +='0'">0</button>
+                
+                <button onclick="compute()" id="com">=</button></div>
+        </div>
+    </div>
+    <script src="calculate.js"></script>
+</body>
+</html>
